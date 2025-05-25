@@ -7,7 +7,7 @@ PLATFORM=linux/amd64
 
 BUILDER = docker
 
-TAG=denvasyliev/k8sdiy
+TAG=DominusAlpha/go-demo-app
 
 BUILD=$$(git rev-parse HEAD|cut -c1-7)
 
@@ -20,7 +20,7 @@ build:
 
 push:
 	@echo "Let's push it"
-	@${BUILDER} push ${TAG}:build-${BUILD}
+	@${BUILDER} push ghcr.io/${TAG}:build-${BUILD}
 
 unit-test:
 	@echo "Run tests here..."
