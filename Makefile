@@ -7,7 +7,7 @@ PLATFORM=linux/amd64
 
 BUILDER = docker
 
-TAG=DominusAlpha/go-demo-app
+TAG=dominusalpha/go-demo-app
 
 BUILD=$$(git rev-parse HEAD|cut -c1-7)
 
